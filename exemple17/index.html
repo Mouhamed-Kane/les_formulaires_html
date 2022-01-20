@@ -1,0 +1,24 @@
+<!-- <form>
+    <label for="mynumber">Choisir un nombre:</label>
+    <input type="range" min="1" max="10" step="0.5" id="mynumber">    
+</form> -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<title>HTML5 Range Type Input</title>
+<script>
+    function getValue() {
+        var number = document.getElementById("mynumber").value;
+        alert(number);
+    }
+</script>
+</head>
+<body>
+    <form>
+        <label for="mynumber">Choisir un nombre:</label>
+        <input type="range" min="1" max="10" step="0.5" id="mynumber">    
+        <button type="button" onclick="getValue();">Valeur obtenue</button>
+    </form>
+</body>
+</html>

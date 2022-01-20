@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulaire</title>
+    </head>
+    <body>
+        <h2>Formulaire Type</h2>
+        <form method="post" action="#">
+            <h3>Coordonnees</h3>
+            <label>Nom</label><br>
+            <input type="text" name="nom" size="25">
+            <p>
+                <label>Prenom</label><br>
+                <input type="text" name="prenom" size="25">
+            
+            <p>
+                <label>Je désire recevoir une documentation</label>
+                <input type="checkbox" name="doc">
+            </p>
+            <p>
+                <label>Pays</label>
+                <select name="pays" >
+                    <option value="pays">Sénégal</option>
+                    <option value="pays">Gambie</option>
+                    <option value="pays">Mali</option>
+                    <option value="pas">Canada</option>
+                </select>
+            </p>
+            <p></p>
+            <p>
+                <label>Sexe</label>
+                <input type="radio" name="sexe">Masculin
+                <input type="radio" name="sexe">Féminin
+            </p>
+            <p>
+                <h3>Domaine(s) d'activite</h3>Vous pouvez en choisir plus qu'un...
+            </p>
+            <p>
+                <input type="checkbox" checked name="domaine" value="Pedagogie">Pedagogie
+                <input type="checkbox" name="domaine" value="Psychologie">Psychologie
+                <input type="checkbox" name="domaine" value="Informatique">Informatique
+                <input type="checkbox" name="domaine" value="Autre">Autre
+                <h4>Commentaire</h4>Si vous le voulez, vous pouvez decrire vos activites ou interets
+            </p>
+            <p>
+                <textarea name="comments" rows="4" cols="60"></textarea>
+            </p>
+            <p>
+                <input type="reset" value="Effacer les données">
+                <input type="submit" value="Enregistrer les donnees">
+            </p>
+            <p></p>
+        </form>
+    </body>
+</html>
